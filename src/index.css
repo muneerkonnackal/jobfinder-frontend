@@ -1,5 +1,8 @@
 body {
-  margin: 0;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -11,3 +14,81 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.no-caret::after {
+  display: none !important;
+}
+
+.custom-pagination {
+  margin-top: 20px;
+  display: flex;
+  gap: 5px; /* Adjust the gap as needed */
+}
+
+.custom-pagination .page-link {
+  background-color: #4caf50;
+  color: #fff; 
+  border: 1px solid #4caf50; 
+  border-radius: 50%; 
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.custom-pagination .page-item.active .page-link {
+  background-color: #007bff !important; 
+  border: 1px solid #007bff !important;
+}
+
+.custom-pagination .page-link.prev-next {
+  background-color: #ff0000 !important; 
+  color: #fff; 
+  border: 1px solid #ff0000; 
+  border-radius: 50%; 
+  width: 30px;
+  height: 30px; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.custom-pagination .page-item.prev-next.active .page-link {
+  background-color: #ff0000 !important;
+  border: 1px solid #ff0000 !important;
+}
+
+.custom-dropdown {
+  border: none;
+  background-color: transparent; 
+  outline: none;
+}
+
+
+         
+         
+         
+         
+.btn-grad {
+  background-image: linear-gradient(to right, #00c6ff 0%, #0072ff  51%, #00c6ff  100%);
+  margin: 10px;
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;            
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  display: block;
+}
+
+.btn-grad:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+
+
